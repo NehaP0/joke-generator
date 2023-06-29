@@ -10,7 +10,7 @@ const App = () => {
   };
 
   const handleGenerateJoke = () => {
-    fetch(`http://localhost:8080/jokes?keyword=${keyword}`)
+    fetch(`https://clumsy-boot-goat.cyclic.app/jokes?keyword=${keyword}`)
       .then((response) => response.json())
       .then((data) => setJoke(data.joke))
       .catch((error) => console.log(error));
